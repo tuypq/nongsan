@@ -1,60 +1,87 @@
 @php Theme::set('section-name', $post->name) @endphp
-<section>
-<div class="container container-ver2">
-<article class="post post--single">
-    <header class="post__header">
-        <h3 class="post__title">{{ $post->name }}</h3>
-        <div class="post__meta">
-            @if (!$post->categories->isEmpty())
-                <span class="post-category"><i class="ion-cube"></i>
+<div class="container">
+    <div class="banner-header banner-lbook3 space-30">
+        <img src="{{ RvMedia::getImageUrl(theme_option('opt-banner-header')) }}" alt="Banner-header">
+        <div class="text">
+            <h3>Bài viết</h3>
+            <p><a href="/" title="Trang chủ">Home</a><i
+                    class="fa fa-caret-right"></i>@if (!$post->categories->isEmpty())
+                    <span class="post-category"><i class="ion-cube"></i>
                     <a href="{{ $post->categories->first()->url }}">{{ $post->categories->first()->name }}</a>
                 </span>
-            @endif
-            <span class="post__created-at"><i class="ion-clock"></i>{{ $post->created_at->format('M d, Y') }}</span>
-            @if ($post->author->username)
-                <span class="post__author"><i class="ion-android-person"></i><span>{{ $post->author->getFullName() }}</span></span>
-            @endif
-
-            @if (!$post->tags->isEmpty())
-                <span class="post__tags"><i class="ion-pricetags"></i>
-                    @foreach ($post->tags as $tag)
-                        <a href="{{ $tag->url }}">{{ $tag->name }}</a>
-                    @endforeach
-                </span>
-            @endif
+                @endif</p>
         </div>
-    </header>
-    <div class="post__content">
-        @if (defined('GALLERY_MODULE_SCREEN_NAME') && !empty($galleries = gallery_meta_data($post)))
-            {!! render_object_gallery($galleries, ($post->categories()->first() ? $post->categories()->first()->name : __('Uncategorized'))) !!}
-        @endif
-        {!! clean($post->content, 'youtube') !!}
-        <div class="fb-like" data-href="{{ Request::url() }}" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
     </div>
-    <footer class="post__footer">
-        <div class="row">
-            @foreach (get_related_posts($post->id, 2) as $relatedItem)
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="post__relate-group @if ($loop->last) post__relate-group--right @endif">
-                        <h4 class="relate__title">@if ($loop->first) {{ __('Previous Post') }} @else {{ __('Next Post') }} @endif</h4>
-                        <article class="post post--related">
-                            <div class="post__thumbnail"><a href="{{ $relatedItem->url }}" class="post__overlay"></a>
-                                <img src="{{ RvMedia::getImageUrl($relatedItem->image, 'thumb', false, RvMedia::getDefaultImage()) }}" alt="{{ $relatedItem->name }}">
-                            </div>
-                            <header class="post__header">
-                                <p><a href="{{ $relatedItem->url }}" class="post__title"> {{ $relatedItem->name }}</a></p>
-                                <div class="post__meta"><span class="post__created-at">{{ $post->created_at->format('M d, Y') }}</span></div>
-                            </header>
-                        </article>
-                    </div>
-                </div>
-            @endforeach
-        </div>
-    </footer>
-    @if (theme_option('facebook_comment_enabled_in_post', 'yes') == 'yes')
-        <br />
-        {!! apply_filters(BASE_FILTER_PUBLIC_COMMENT_AREA, Theme::partial('comments')) !!}
-    @endif
-</article>
 </div>
-</section>
+<div class="container container-ver2">
+    <div class="blog-post-container blog-page blog-classic">
+        <div id="primary" class="col-xs-12 col-md-9 float-left center">
+            <div class="blog-post-container box single-post">
+                <div class="blog-post-item">
+                    <div class="head">
+                        <h3>{{$post->name}}</h3>
+
+                        <p class="post-by"> @if (!$post->categories->isEmpty())
+                                <span class="post-category"><i class="ion-cube"></i>
+                    <a href="{{ $post->categories->first()->url }}">{{ $post->categories->first()->name }}</a>
+                </span>
+                            @endif<span>{{ $post->created_at->format('M d, Y') }}</span><span><i
+                                    class="fa fa-pencil-square-o"></i> {{$post->author->getFullName()}}</span><span><i
+                                    class="fa fa-comment-o"></i> 36 Comments</span></p>
+                    </div>
+                    <!-- End head -->
+                    <div class="blog-post-image hover-images">
+                        <a href="#" title="Post"><img class="img-responsive" src="assets/images/blog-details.jpg"
+                                                      alt=""></a>
+                    </div>
+                    <div class="text align-left">
+                        {!! $post->content !!}
+
+                        <footer class="post__footer">
+                            <div class="row">
+                                @foreach (get_related_posts($post->id, 2) as $relatedItem)
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div
+                                            class="post__relate-group @if ($loop->last) post__relate-group--right @endif">
+                                            <h4 class="relate__title">@if ($loop->first) {{ __('Previous Post') }} @else {{ __('Next Post') }} @endif</h4>
+                                            <article class="post post--related">
+                                                <div class="post__thumbnail"><a href="{{ $relatedItem->url }}"
+                                                                                class="post__overlay"></a>
+                                                    <img
+                                                        src="{{ RvMedia::getImageUrl($relatedItem->image, 'thumb', false, RvMedia::getDefaultImage()) }}"
+                                                        alt="{{ $relatedItem->name }}">
+                                                </div>
+                                                <header class="post__header">
+                                                    <p><a href="{{ $relatedItem->url }}"
+                                                          class="post__title"> {{ $relatedItem->name }}</a></p>
+                                                    <div class="post__meta"><span
+                                                            class="post__created-at">{{ $post->created_at->format('M d, Y') }}</span>
+                                                    </div>
+                                                </header>
+                                            </article>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </footer>
+
+                    </div>
+                    <!-- End text -->
+                </div>
+                <!-- End item -->
+            </div>
+            <!-- End blog-post-container -->
+        </div>
+        <!-- End Primary -->
+        <div id="secondary" class="widget-area col-xs-12 col-md-3 float-right">
+            <div class="wrap-sidebar">
+                <aside class="widget widget_product_categories">
+                    {!! dynamic_sidebar('primary_sidebar') !!}
+                </aside>
+            </div>
+            <!-- End wrap-sidebar -->
+        </div>
+        <!-- End Secondary -->
+    </div>
+    <!-- end product sidebar -->
+</div>
