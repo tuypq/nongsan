@@ -20777,3 +20777,6 @@ nav.megamenu-v2 ul.main-menu li:last-child {
 .post_content {
     overflow: hidden;
 }
+.product-price-none {
+    padding-left: 20px;
+}

@@ -152,7 +152,7 @@
                                 <p class="product-price">{{format_price($item->sale_price)}}</p>
                             @endif
                             @if($item->price == 0 && $item->sale_price == 0)
-                                <p class="product-price">Liên hệ</p>
+                                <p class="product-price product-price-none">Liên hệ</p>
                             @endif
                         </div>
                         <!-- End item -->
