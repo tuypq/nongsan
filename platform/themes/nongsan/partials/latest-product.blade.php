@@ -52,11 +52,6 @@
                                 <a href="{{$item->url}}" title="product-images">
                                     <img class="primary_image" src="{{ RvMedia::getImageUrl($item->image, 'medium', false, RvMedia::getDefaultImage()) }}" alt=""/>
                                 </a>
-                                <div class="action">
-                                    <a class="add-cart" href="#" title="Add to cart"></a>
-                                    <a class="wish" href="#" title="Wishlist"></a>
-                                    <a class="zoom" href="#" title="Quick view"></a>
-                                </div>
                                 <!-- End action -->
                             </div>
                             <a href="{{$item->url}}" title="Union Bed"><p class="product-title">{{$item->name}}</p></a>
