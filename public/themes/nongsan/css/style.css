@@ -20757,3 +20757,23 @@ nav.megamenu-v2 ul.main-menu li:last-child {
 .dropdown-menu > .active > a {
     background-color: unset;
 }
+.widget_title {
+    font-weight: 600;
+    letter-spacing: .3px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.post_footer {
+    display: inline-block;
+    vertical-align: top;
+}
+.post_img {
+    float: left;
+    margin-right: 10px;
+}
+.post_img img {
+    width: 80px;
+}
+.post_content {
+    overflow: hidden;
+}
