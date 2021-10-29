@@ -46,7 +46,7 @@
                      data-endspeed="300"
                      data-endeasing="Power1.easeIn"
                      data-captionhidden="on"
-                     style="z-index: 5"><a href="#" title="View Shop" class="">Xem thêm</a>
+                     style="z-index: 5"><a href="/products" title="View Shop" class="">Xem thêm</a>
                 </div>
                 <!-- LAYER NR. 8s -->
             </li>
@@ -96,7 +96,7 @@
                      data-endspeed="300"
                      data-endeasing="Power1.easeIn"
                      data-captionhidden="on"
-                     style="z-index: 5"><a href="#" title="View Shop" class="">Xem thêm</a>
+                     style="z-index: 5"><a href="/products" title="View Shop" class="">Xem thêm</a>
                 </div>
                 <!-- LAYER NR. 8s -->
             </li>
