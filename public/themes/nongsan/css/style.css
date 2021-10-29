@@ -18172,13 +18172,13 @@ nav.megamenu-v2 ul.main-menu li:last-child {
 }
 
 .page-contact .head {
-  background: #fff;
+  background: transparent;
   position: relative;
   padding: 40px;
-  box-shadow: 0px 8px 33px 0px rgba(0, 0, 0, 0.13);
+  /*box-shadow: 0px 8px 33px 0px rgba(0, 0, 0, 0.13);*/
   display: inline-block;
   width: 100%;
-  margin-top: -100px;
+  /*margin-top: -100px;*/
   margin-bottom: 35px;
 }
 
