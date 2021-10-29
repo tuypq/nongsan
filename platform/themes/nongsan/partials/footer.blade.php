@@ -57,37 +57,37 @@
         <div class="container container-ver2">
             <div class="box bottom">
                 <p class="float-left">{{theme_option('copyright')}}</p>
-                <div class="float-right">
-                    <ul class="menu-bottom-footer">
-                        <li><a href="#" title="Contact Us">Contact Us</a></li>
-                        <li><a href="#" title="Term of Use">Term of Use</a></li>
-                        <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
-                        <li><a href="#" title="Site Map">Site Map</a></li>
-                    </ul>
-                    <div class="language">
-                        <span>Language:</span>
-                        <div class="hover-menu">
-                            <p>EN <i class="fa fa-angle-down"></i></p>
-                            <div class="list-menu">
-                                <ul>
-                                    <li><a href="#" title="EN">EN</a></li>
-                                    <li><a href="#" title="VN">VN</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <span>Price:</span>
-                        <div class="hover-menu">
-                            <p>USD <i class="fa fa-angle-down"></i></p>
-                            <div class="list-menu">
-                                <ul>
-                                    <li><a href="#" title="USD">USD</a></li>
-                                    <li><a href="#" title="VND">VND</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End language -->
-                </div>
+{{--                <div class="float-right">--}}
+{{--                    <ul class="menu-bottom-footer">--}}
+{{--                        <li><a href="#" title="Contact Us">Contact Us</a></li>--}}
+{{--                        <li><a href="#" title="Term of Use">Term of Use</a></li>--}}
+{{--                        <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>--}}
+{{--                        <li><a href="#" title="Site Map">Site Map</a></li>--}}
+{{--                    </ul>--}}
+{{--                    <div class="language">--}}
+{{--                        <span>Language:</span>--}}
+{{--                        <div class="hover-menu">--}}
+{{--                            <p>EN <i class="fa fa-angle-down"></i></p>--}}
+{{--                            <div class="list-menu">--}}
+{{--                                <ul>--}}
+{{--                                    <li><a href="#" title="EN">EN</a></li>--}}
+{{--                                    <li><a href="#" title="VN">VN</a></li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <span>Price:</span>--}}
+{{--                        <div class="hover-menu">--}}
+{{--                            <p>USD <i class="fa fa-angle-down"></i></p>--}}
+{{--                            <div class="list-menu">--}}
+{{--                                <ul>--}}
+{{--                                    <li><a href="#" title="USD">USD</a></li>--}}
+{{--                                    <li><a href="#" title="VND">VND</a></li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!-- End language -->--}}
+{{--                </div>--}}
             </div>
         </div>
         <!-- End container -->

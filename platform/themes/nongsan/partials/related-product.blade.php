@@ -1,6 +1,6 @@
 <!-- tab-container -->
 <div class="title-text-v2 space-60">
-    <h3>Related Products</h3>
+    <h3>Sản phẩm liên quan</h3>
 </div>
 <!-- End title -->
 <div class="upsell-product owl-carousel products furniture hover-shadow ver2">
