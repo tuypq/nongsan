@@ -14,11 +14,11 @@
     <div id="primary" class="col-xs-12 col-md-9">
         <div class="wrap-breadcrumb">
             <div class="ordering">
-                <div class="float-left">
-                    <span class="col active"></span>
-                    <span class="list"></span>
+{{--                <div class="float-left">--}}
+{{--                    <span class="col active"></span>--}}
+{{--                    <span class="list"></span>--}}
 {{--                    <p class="result-count">Showing 1-12 of 30 relults</p>--}}
-                </div>
+{{--                </div>--}}
 {{--                <div class="float-right">--}}
 {{--                    <form action="#" method="get" class="order-by">--}}
 {{--                        <p>Sort by :</p>--}}

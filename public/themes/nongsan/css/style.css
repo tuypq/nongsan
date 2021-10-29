@@ -20754,3 +20754,6 @@ nav.megamenu-v2 ul.main-menu li:last-child {
 .footer-menu a{
     font-size: 15px;
 }
+.dropdown-menu > .active > a {
+    background-color: unset;
+}
