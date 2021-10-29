@@ -68,8 +68,15 @@
 {{--                        </div>--}}
                         <!-- End Rating -->
                         <div class="wrap-price">
-                            <p class="price-old">{{format_price($product->price)}}</p>
-                            <p class="price">{{format_price($product->sale_price)}}</p>
+                            @if($product->price != 0)
+                                <p class="price-old">{{format_price($product->price)}}</p>
+                            @endif
+                            @if($product->sale_price != 0)
+                                    <p class="price">{{format_price($product->sale_price)}}</p>
+                                @endif
+                            @if($product->price == 0 && $product->sale_price == 0)
+                                <p class="product-price product-price-none">Liên hệ</p>
+                            @endif
                         </div>
                         <!-- End Price -->
                     </div>
