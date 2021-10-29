@@ -10,21 +10,18 @@
             <li class="item" rel="tab_4">Các loại hạt</li>
             <li class="item" rel="tab_5">Sản phẩm khác</li>
         </ul>
-        <div class="tab-container space-10">
-            <div id="tab_1" class="tab-content">
+        <div class="tab-container  space-10">
+            <div id="tab_1" class="tab-content active">
                 <div class="products hover-shadow ver2 border-space-product border-space-product">
                     @foreach(get_featured_products(['take'=>10]) as $item)
 {{--                        @dd($item)--}}
                     <div class="product">
-                        <div class="product-images">
-                            <a href="{{$item->url}}" title="product-images">
-                                <img class="primary_image" src="{{ RvMedia::getImageUrl($item->image, 'medium', false, RvMedia::getDefaultImage()) }}" alt=""/>
+                        <div class="product-images ">
+                            <a href="{{$item->url}}" title="product-images ">
+                                <img class="primary_image" src="{{ RvMedia::getImageUrl($item->image, null, false, RvMedia::getDefaultImage()) }}" alt=""/>
+                                <img class="secondary_image" src="{{ RvMedia::getImageUrl($item->image, null, false, RvMedia::getDefaultImage()) }}" alt="">
                             </a>
-                            <div class="action">
-                                <a class="add-cart" href="#" title="Add to cart"></a>
-                                <a class="wish" href="#" title="Wishlist"></a>
-                                <a class="zoom" href="#" title="Quick view"></a>
-                            </div>
+
                             <!-- End action -->
                         </div>
                         <a href="{{$item->url}}" title="Union Bed"><p class="product-title">{{$item->name}}</p></a>
