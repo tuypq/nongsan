@@ -2989,7 +2989,7 @@ ul.tabs.tabs-title li span.count {
 
 @media (min-width: 1200px) {
   .featured-products.home_2 .products .product {
-    width: 20%;
+    width: 25%;
   }
 }
 
@@ -3014,7 +3014,7 @@ ul.tabs.tabs-title li span.count {
 
 @media (min-width: 1200px) {
   .featured-products .products .product {
-    width: 16.6666%;
+    width: 20%;
   }
   .featured-products .products .product:nth-last-child(1), .featured-products .products .product:nth-last-child(2), .featured-products .products .product:nth-last-child(3), .featured-products .products .product:nth-last-child(4), .featured-products .products .product:nth-last-child(5), .featured-products .products .product:nth-last-child(6) {
     border-bottom: none;
@@ -11197,13 +11197,13 @@ nav.pagination .next:hover i, nav.pagination .prev:hover i {
 }
 
 .widget ul.product-categories li a:before {
-  content: "";
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  background: #2b2b2b;
-  margin-right: 10px;
-  margin-bottom: 4px;
+  /*content: "";*/
+  /*display: inline-block;*/
+  /*width: 5px;*/
+  /*height: 5px;*/
+  /*background: #2b2b2b;*/
+  /*margin-right: 10px;*/
+  /*margin-bottom: 4px;*/
 }
 
 .widget ul.product-categories ul {
@@ -14985,12 +14985,12 @@ nav.pagination a.next:hover i, nav.pagination a.prev:hover i {
 }
 
 .mega-menu ul.navbar-nav ul.menu-level-1 li a:after {
-  position: absolute;
-  left: 0px;
-  height: 5px;
-  width: 5px;
-  background: #333;
-  top: 15px;
+  /*position: absolute;*/
+  /*left: 0px;*/
+  /*height: 5px;*/
+  /*width: 5px;*/
+  /*background: #333;*/
+  /*top: 15px;*/
 }
 
 .mega-menu ul.navbar-nav ul.menu-level-1 li a:hover {

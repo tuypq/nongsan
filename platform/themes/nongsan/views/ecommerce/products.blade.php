@@ -4,8 +4,8 @@
     <div class="banner-header banner-lbook3 space-30">
         <img style="max-height: 250px" src="{{ RvMedia::getImageUrl(theme_option('opt-banner-header')) }}"  alt="Banner-header">
         <div class="text">
-            <h3>all products</h3>
-            <p><a href="/" title="Home">Home</a><i class="fa fa-caret-right"></i>All Products</p>
+            <h3>Tất cả sản phẩm</h3>
+            <p><a href="/" title="Home">Trang chủ</a><i class="fa fa-caret-right"></i>Tất cả sản phẩm</p>
         </div>
     </div>
 </div>
@@ -17,20 +17,20 @@
                 <div class="float-left">
                     <span class="col active"></span>
                     <span class="list"></span>
-                    <p class="result-count">Showing 1-12 of 30 relults</p>
+{{--                    <p class="result-count">Showing 1-12 of 30 relults</p>--}}
                 </div>
-                <div class="float-right">
-                    <form action="#" method="get" class="order-by">
-                        <p>Sort by :</p>
-                        <select class="orderby" name="orderby">
-                            <option>popularity</option>
-                            <option selected="selected">average rating</option>
-                            <option>newness</option>
-                            <option>price: low to high</option>
-                            <option>price: high to low</option>
-                        </select>
-                    </form>
-                </div>
+{{--                <div class="float-right">--}}
+{{--                    <form action="#" method="get" class="order-by">--}}
+{{--                        <p>Sort by :</p>--}}
+{{--                        <select class="orderby" name="orderby">--}}
+{{--                            <option>popularity</option>--}}
+{{--                            <option selected="selected">average rating</option>--}}
+{{--                            <option>newness</option>--}}
+{{--                            <option>price: low to high</option>--}}
+{{--                            <option>price: high to low</option>--}}
+{{--                        </select>--}}
+{{--                    </form>--}}
+{{--                </div>--}}
             </div>
         </div>
         <div class="products ver2 grid_full grid_sidebar hover-shadow furniture">

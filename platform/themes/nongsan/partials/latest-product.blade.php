@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container container-ver2">
     <div class="title-text-v2">
         <h3>Sản Phẩm mới nhất</h3>
     </div>

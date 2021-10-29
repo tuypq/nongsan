@@ -131,21 +131,6 @@
     <!-- End container -->
 </div>
 {!! Theme::partial('latest-product') !!}
-<div class="special bg-images box space-100" style="background-image:url('public/themes/nongsan/images/home1-banner1.jpg');background-repeat: no-repeat;">
-    <div class="col-md-5 float-left align-right">
-        <img class="images-logo" src="public/themes/nongsan/images/home1-images-banner1.png" alt="images">
-    </div>
-    <!-- End col-md-7 -->
-    <div class="col-md-7 float-right align-left">
-        <div class="special-content">
-            <img class="icon-big" src="public/themes/nongsan/images/icon-shipping-5.png" alt="Big sale today"><h3>Sale ngay hôm nay</h3>
-            <h5>Sale 30% cho hóa đơn từ 1.500.000</h5>
-            <div class="time" data-countdown="countdown" data-date="12-20-2021-10-20-30"></div>
-            <a class="link-v1 bg-brand font-300" href="/products" title="shopnow">Mua ngay</a>
-        </div>
-    </div>
-    <!-- End col-md-5 -->
-</div>
 
 <div class="choose-us">
     <div class="container container-ver2">
@@ -186,7 +171,7 @@
             <img class="img-responsive" src="{{ RvMedia::getImageUrl(theme_option('opt-banner-why-choose')) }}" alt="banner">
         </div>
         <!--End col-md-6-->
-        <div class="col-md-3 align-right right-items">
+        <div class="col-md-3  right-items">
             <div class="text">
                 <img class="icon-choose" src="public/themes/nongsan/images/icon-choose-4.png" alt="icon-choose">
                 <h3>Chứng nhận</h3>

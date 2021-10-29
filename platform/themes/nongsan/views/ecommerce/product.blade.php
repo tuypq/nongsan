@@ -139,9 +139,9 @@
             <!-- End product-details-content -->
             <div class="hoz-tab-container space-padding-tb-30">
                 <ul class="tabs">
-                    <li class="item" rel="description">Description</li>
-                    <li class="item" rel="product-tags">Additional infomation</li>
-                    <li class="item" rel="customer">Customer Reviews (15)</li>
+                    <li class="item" rel="description">Mô tả sản phẩm </li>
+{{--                    <li class="item" rel="product-tags">Additional infomation</li>--}}
+{{--                    <li class="item" rel="customer">Customer Reviews (15)</li>--}}
                 </ul>
                 <div class="tab-container">
                     <div id="description" class="tab-content">
@@ -149,90 +149,90 @@
                             {!! $product->content !!}
                         </div>
                     </div>
-                    <div id="product-tags" class="tab-content">
-                        <p>
-                            <span>Brand</span>
-                            <span>Hong Quat Packging</span>
-                        </p>
-                        <p>
-                            <span>Kg</span>
-                            <span>54g</span>
-                        </p>
-                        <p>
-                            <span>Calo</span>
-                            <span>36 Calo</span>
-                        </p>
-                    </div>
-                    <div id="customer" class="tab-content">
-                        <div class="box border">
-                            <h3>Reviews (0)</h3>
-                            <p>There are no reviews yet.</p>
-                        </div>
-                        <form class="form-horizontal">
-                            <h3>Add a Review</h3>
-                            <div class="box">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class=" control-label" for="inputName">Name *</label>
-                                        <input type="text" class="form-control" id="inputName" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class=" control-label" for="inputsumary">Email <span
-                                                class="color">*</span></label>
-                                        <input type="text" class="form-control" id="inputsumary" placeholder="Email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="box rating">
-                                <p>Your Rating <span class="color">*</span></p>
-                                <ul>
-                                    <li>
-                                        <a href="#" title="rating">
-                                            <i class="fa fa-star"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="active" href="#" title="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="form-group">
-                                <label class=" control-label" for="inputReview">Review <span
-                                        class="color">*</span></label>
-                                <textarea class="form-control" id="inputReview"></textarea>
-                            </div>
-                            <a class="button-v1" href="#" title="add tags">Send review</a>
-                        </form>
-                    </div>
+{{--                    <div id="product-tags" class="tab-content">--}}
+{{--                        <p>--}}
+{{--                            <span>Brand</span>--}}
+{{--                            <span>Hong Quat Packging</span>--}}
+{{--                        </p>--}}
+{{--                        <p>--}}
+{{--                            <span>Kg</span>--}}
+{{--                            <span>54g</span>--}}
+{{--                        </p>--}}
+{{--                        <p>--}}
+{{--                            <span>Calo</span>--}}
+{{--                            <span>36 Calo</span>--}}
+{{--                        </p>--}}
+{{--                    </div>--}}
+{{--                    <div id="customer" class="tab-content">--}}
+{{--                        <div class="box border">--}}
+{{--                            <h3>Reviews (0)</h3>--}}
+{{--                            <p>There are no reviews yet.</p>--}}
+{{--                        </div>--}}
+{{--                        <form class="form-horizontal">--}}
+{{--                            <h3>Add a Review</h3>--}}
+{{--                            <div class="box">--}}
+{{--                                <div class="col-md-6">--}}
+{{--                                    <div class="form-group">--}}
+{{--                                        <label class=" control-label" for="inputName">Name *</label>--}}
+{{--                                        <input type="text" class="form-control" id="inputName" placeholder="Name">--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-md-6">--}}
+{{--                                    <div class="form-group">--}}
+{{--                                        <label class=" control-label" for="inputsumary">Email <span--}}
+{{--                                                class="color">*</span></label>--}}
+{{--                                        <input type="text" class="form-control" id="inputsumary" placeholder="Email">--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="box rating">--}}
+{{--                                <p>Your Rating <span class="color">*</span></p>--}}
+{{--                                <ul>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="#" title="rating">--}}
+{{--                                            <i class="fa fa-star"></i>--}}
+{{--                                        </a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a class="active" href="#" title="rating">--}}
+{{--                                            <i class="fa fa-star"></i>--}}
+{{--                                            <i class="fa fa-star"></i>--}}
+{{--                                        </a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="#" title="rating">--}}
+{{--                                            <i class="fa fa-star"></i>--}}
+{{--                                            <i class="fa fa-star"></i>--}}
+{{--                                            <i class="fa fa-star"></i>--}}
+{{--                                        </a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="#" title="rating">--}}
+{{--                                            <i class="fa fa-star"></i>--}}
+{{--                                            <i class="fa fa-star"></i>--}}
+{{--                                            <i class="fa fa-star"></i>--}}
+{{--                                            <i class="fa fa-star"></i>--}}
+{{--                                        </a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="#" title="rating">--}}
+{{--                                            <i class="fa fa-star"></i>--}}
+{{--                                            <i class="fa fa-star"></i>--}}
+{{--                                            <i class="fa fa-star"></i>--}}
+{{--                                            <i class="fa fa-star"></i>--}}
+{{--                                            <i class="fa fa-star"></i>--}}
+{{--                                        </a>--}}
+{{--                                    </li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                            <div class="form-group">--}}
+{{--                                <label class=" control-label" for="inputReview">Review <span--}}
+{{--                                        class="color">*</span></label>--}}
+{{--                                <textarea class="form-control" id="inputReview"></textarea>--}}
+{{--                            </div>--}}
+{{--                            <a class="button-v1" href="#" title="add tags">Send review</a>--}}
+{{--                        </form>--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </div>
