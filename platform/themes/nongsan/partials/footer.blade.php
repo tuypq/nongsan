@@ -26,7 +26,7 @@
                     <ul class="list-footer">
                         <li><a href="#" title="title"><b>Địa chỉ</b>: {{theme_option('address')}}</a></li>
                         <li><a href="#" title="title"><b>Điện Thoại</b>: {{theme_option('phone')}}</a></li>
-                        <li><a href="#" title="title"><b>Email</b>: {{theme_option('email')}}</a></li>
+                        <li><a href="#" title="title"><b>Email</b>: {{theme_option('contact_email')}}</a></li>
 
                     </ul>
                     <div class="social space-30">
