@@ -15,7 +15,7 @@
                 <div class="products">
                   @foreach(get_products_by_collections(['collections' => [
                 'by'       => 'id',
-                'value_in' => [1],
+                'value_in' => [6],
             ]]) as $item )
                     <div class="product">
                         <div class="product-images">
@@ -45,7 +45,7 @@
                 <div class="products">
                     @foreach(get_products_by_collections(['collections' => [
                   'by'       => 'id',
-                  'value_in' => [1],
+                  'value_in' => [6],
               ]]) as $item )
                         <div class="product">
                             <div class="product-images">
@@ -75,7 +75,7 @@
                 <div class="products">
                     @foreach(get_products_by_collections(['collections' => [
                   'by'       => 'id',
-                  'value_in' => [1],
+                  'value_in' => [7],
               ]]) as $item )
                         <div class="product">
                             <div class="product-images">
@@ -105,7 +105,7 @@
                 <div class="products">
                     @foreach(get_products_by_collections(['collections' => [
                   'by'       => 'id',
-                  'value_in' => [1],
+                  'value_in' => [5],
               ]]) as $item )
                         <div class="product">
                             <div class="product-images">
@@ -135,7 +135,7 @@
                 <div class="products">
                     @foreach(get_products_by_collections(['collections' => [
                   'by'       => 'id',
-                  'value_in' => [1],
+                  'value_in' => [4],
               ]]) as $item )
                         <div class="product">
                             <div class="product-images">
