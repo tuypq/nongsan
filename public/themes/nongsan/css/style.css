@@ -15830,7 +15830,7 @@ button.button_search:hover {
   font: 400 20px "Roboto Slab";
   color: #80b435;
   padding-bottom: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   position: relative;
   text-transform: capitalize;
 }
@@ -20752,7 +20752,7 @@ nav.megamenu-v2 ul.main-menu li:last-child {
     padding: 10px 0;
 }
 .footer-menu a{
-    font-size: 15px;
+    font-size: 17px;
 }
 .dropdown-menu > .active > a {
     background-color: unset;
@@ -20779,4 +20779,7 @@ nav.megamenu-v2 ul.main-menu li:last-child {
 }
 .product-price-none {
     padding-left: 20px;
+}
+.footer-menu ul li{
+    padding: 0 0 10px 0;
 }
