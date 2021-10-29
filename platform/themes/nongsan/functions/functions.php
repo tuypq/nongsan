@@ -31,8 +31,8 @@ shortcode()->setAdminConfig('youtube-video', Theme::partial('short-codes.youtube
 add_shortcode('featured-posts', __('Featured posts'), __('Featured posts'), function () {
     return Theme::partial('short-codes.featured-posts');
 });
-add_shortcode('contact', __('Contact'), __('Contact'), function () {
-    return Theme::partial('short-codes.contact');
+add_shortcode('contact-form-1', __('Contact form'), __('Contact form'), function ($shortCode) {
+    return Theme::partial('short-codes.contact', ['title' => $shortCode->title]);
 });
 add_shortcode('recent-posts', __('Recent posts'), __('Recent posts'), function ($shortCode) {
     return Theme::partial('short-codes.recent-posts', ['title' => $shortCode->title]);
