@@ -65,7 +65,7 @@
                     <div class="inner-topbar box">
                         <div class="float-left">
 {{--                            <p class="acc"><img src="public/themes/nongsan/images/icon-user-header.png" alt="icon">My Account</p>--}}
-                            <p class="phone"><img src="public/themes/nongsan/images/icon-phone-header.png.png" alt=""><span>{{ RvMedia::getImageUrl(theme_option('phone')) }}</span></p>
+                            <p class="phone"><img src="public/themes/nongsan/images/icon-phone-header.png.png" alt=""><span>{{ theme_option('phone') }}</span></p>
                         </div>
                         <div class="logo">
                             <a href="/" title="Uno">

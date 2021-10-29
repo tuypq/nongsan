@@ -53,3 +53,13 @@ theme_option()->setField([
         'value' => null,
     ],
 ]);
+theme_option()->setField([
+    'id'         => 'opt-banner-why-choose',
+    'section_id' => 'opt-banner-header',
+    'type'       => 'mediaImage',
+    'label'      => __('Banner whychoose'),
+    'attributes' => [
+        'name'  => 'opt-banner-why-choose',
+        'value' => null,
+    ],
+]);

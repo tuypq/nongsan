@@ -1,14 +1,14 @@
 <div class="container container-ver2">
     <div class="title-text-v2">
-        <h3>Featured Products</h3>
+        <h3>Sản phẩm nổi bật</h3>
     </div>
     <div class="featured-products products-size-small">
         <ul class="tabs tabs-title">
-            <li class="item" rel="tab_01">POPULAR</li>
-            <li class="item" rel="tab_02">NEW ARRIVALS</li>
-            <li class="item" rel="tab_03">SPECIALS</li>
-            <li class="item" rel="tab_04">ON SALE</li>
-            <li class="item" rel="tab_05">TOP RATED</li>
+            <li class="item" rel="tab_01">Nổi bật</li>
+            <li class="item" rel="tab_02">Sản phẩm mới</li>
+            <li class="item" rel="tab_03">Đặc biệt </li>
+            <li class="item" rel="tab_04">Đang Sale</li>
+            <li class="item" rel="tab_05">Mua nhiểu nhất</li>
         </ul>
         <div class="tab-container space-10">
             <div id="tab_01" class="tab-content">
@@ -25,9 +25,15 @@
                             </a>
                         </div>
                         <a href="{{$item->url}}" title="Union Bed"><p class="product-title">{{$item->name}}</p></a>
+                        @if($item->price != 0)
                         <p class="product-price-old">{{format_price($item->price)}}</p>
+                        @endif
+                        @if($item->sale_price != 0)
                         <p class="product-price">{{format_price($item->sale_price)}}</p>
-
+                        @endif
+                        @if($item->price == 0 && $item->sale_price == 0)
+                            <p class="product-price">Liên hệ</p>
+                        @endif
                     </div>
                     <!-- End item -->
                     @endforeach
@@ -49,9 +55,15 @@
                                 </a>
                             </div>
                             <a href="{{$item->url}}" title="Union Bed"><p class="product-title">{{$item->name}}</p></a>
-                            <p class="product-price-old">{{$item->price}}</p>
-                            <p class="product-price">{{$item->sale_price}}</p>
-
+                            @if($item->price != 0)
+                                <p class="product-price-old">{{format_price($item->price)}}</p>
+                            @endif
+                            @if($item->sale_price != 0)
+                                <p class="product-price">{{format_price($item->sale_price)}}</p>
+                            @endif
+                            @if($item->price == 0 && $item->sale_price == 0)
+                                <p class="product-price">Liên hệ</p>
+                            @endif
                         </div>
                         <!-- End item -->
                     @endforeach
@@ -73,9 +85,15 @@
                                 </a>
                             </div>
                             <a href="{{$item->url}}" title="Union Bed"><p class="product-title">{{$item->name}}</p></a>
-                            <p class="product-price-old">{{$item->price}}</p>
-                            <p class="product-price">{{$item->sale_price}}</p>
-
+                            @if($item->price != 0)
+                                <p class="product-price-old">{{format_price($item->price)}}</p>
+                            @endif
+                            @if($item->sale_price != 0)
+                                <p class="product-price">{{format_price($item->sale_price)}}</p>
+                            @endif
+                            @if($item->price == 0 && $item->sale_price == 0)
+                                <p class="product-price">Liên hệ</p>
+                            @endif
                         </div>
                         <!-- End item -->
                     @endforeach
@@ -97,9 +115,15 @@
                                 </a>
                             </div>
                             <a href="{{$item->url}}" title="Union Bed"><p class="product-title">{{$item->name}}</p></a>
-                            <p class="product-price-old">{{$item->price}}</p>
-                            <p class="product-price">{{$item->sale_price}}</p>
-
+                            @if($item->price != 0)
+                                <p class="product-price-old">{{format_price($item->price)}}</p>
+                            @endif
+                            @if($item->sale_price != 0)
+                                <p class="product-price">{{format_price($item->sale_price)}}</p>
+                            @endif
+                            @if($item->price == 0 && $item->sale_price == 0)
+                                <p class="product-price">Liên hệ</p>
+                            @endif
                         </div>
                         <!-- End item -->
                     @endforeach
@@ -121,9 +145,15 @@
                                 </a>
                             </div>
                             <a href="{{$item->url}}" title="Union Bed"><p class="product-title">{{$item->name}}</p></a>
-                            <p class="product-price-old">{{$item->price}}</p>
-                            <p class="product-price">{{$item->sale_price}}</p>
-
+                            @if($item->price != 0)
+                                <p class="product-price-old">{{format_price($item->price)}}</p>
+                            @endif
+                            @if($item->sale_price != 0)
+                                <p class="product-price">{{format_price($item->sale_price)}}</p>
+                            @endif
+                            @if($item->price == 0 && $item->sale_price == 0)
+                                <p class="product-price">Liên hệ</p>
+                            @endif
                         </div>
                         <!-- End item -->
                     @endforeach
@@ -133,7 +163,7 @@
             <!-- End tab-content -->
         </div>
         <div class="box center space-padding-tb-30 space-10">
-            <a class="link-v1 color-brand font-300" href="/products" title="View All">View All</a>
+            <a class="link-v1 color-brand font-300" href="/products" title="View All">Xem thêm</a>
         </div>
         <!-- End viewall -->
     </div>

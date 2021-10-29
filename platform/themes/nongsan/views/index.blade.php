@@ -8,7 +8,7 @@
 
                 <!-- LAYER NR. 9 -->
                 <div class="tp-caption color-ea8800 customin randomrotateout font-ro tp-resizeme size-130 weight-300 uppercase"
-                     data-x="585"
+                     data-x="650"
                      data-y="245"
                      data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
                      data-speed="500"
@@ -18,12 +18,12 @@
                      data-splitout="none"
                      data-elementdelay="0.1"
                      data-endelementdelay="0.1"
-                     style="z-index: 3">Fresh Food
+                     style="z-index: 3">An Bình
                 </div>
 
                 <!-- LAYER NR. 3 -->
                 <div class="tp-caption color-2b2b2b font-ros weight-400 skewfromleft customout size-20 letter-spacing-2"
-                     data-x="505"
+                     data-x="550"
                      data-y="403"
                      data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
                      data-speed="800"
@@ -32,7 +32,7 @@
                      data-endspeed="300"
                      data-endeasing="Power1.easeIn"
                      data-captionhidden="on"
-                     style="z-index: 4">We Deliver Organic Fruits And Vegetables Fresh From Our Fields To Your Home
+                     style="z-index: 4">Mang sức khỏe đến ngôi nhà của bạn qua từng món ăn hằng ngày
                 </div>
 
                 <!-- LAYER NR. 7 -->
@@ -46,7 +46,7 @@
                      data-endspeed="300"
                      data-endeasing="Power1.easeIn"
                      data-captionhidden="on"
-                     style="z-index: 5"><a href="#" title="View Shop" class="">View Details</a>
+                     style="z-index: 5"><a href="#" title="View Shop" class="">Xem thêm</a>
                 </div>
                 <!-- LAYER NR. 8s -->
             </li>
@@ -68,7 +68,7 @@
                      data-splitout="none"
                      data-elementdelay="0.1"
                      data-endelementdelay="0.1"
-                     style="z-index: 3">Fresh Organic Food
+                     style="z-index: 3">Nông sản An Bình
                 </div>
 
                 <!-- LAYER NR. 3 -->
@@ -82,7 +82,7 @@
                      data-endspeed="300"
                      data-endeasing="Power1.easeIn"
                      data-captionhidden="on"
-                     style="z-index: 4">We Deliver Organic Fruits And Vegetables Fresh From Our Fields To Your Home
+                     style="z-index: 4">Chuyên cung cấp các thực phẩm sạch từ nông trại của chúng tôi.
                 </div>
 
                 <!-- LAYER NR. 7 -->
@@ -96,7 +96,7 @@
                      data-endspeed="300"
                      data-endeasing="Power1.easeIn"
                      data-captionhidden="on"
-                     style="z-index: 5"><a href="#" title="View Shop" class="">View Details</a>
+                     style="z-index: 5"><a href="#" title="View Shop" class="">Xem thêm</a>
                 </div>
                 <!-- LAYER NR. 8s -->
             </li>
@@ -109,23 +109,23 @@
     <div class="shipping-v2 home3-shiping space-30">
         <div class="col-md-3 col-sm-3 col-xs-6">
             <img src="public/themes/nongsan/images/icon-shipping-1.png" alt="images">
-            <h3>Free Shipping</h3>
-            <p>ON ORDER OVER $500</p>
+            <h3>Free Ship</h3>
+            <p>Free ship hóa đơn trên 500.000</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-6">
             <img src="public/themes/nongsan/images/icon-shipping-2.png" alt="images">
-            <h3>Support</h3>
-            <p>LIFE TIME SUPPORT 24/7</p>
+            <h3>Hỗ Trợ</h3>
+            <p>Hỗ trợ 24/7</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-6">
             <img src="public/themes/nongsan/images/icon-shipping-3.png" alt="images">
-            <h3>Help Partner</h3>
-            <p>HELP ALL ASPECTS</p>
+            <h3>Đối tác</h3>
+            <p>Hỗ trợ tất cả</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-6">
             <img src="public/themes/nongsan/images/icon-shipping-4.png" alt="images">
-            <h3>Contact With Us</h3>
-            <p>+07 (0) 7782 9137</p>
+            <h3>Liên hệ</h3>
+            <p>{{ theme_option('phone')}}</p>
         </div>
     </div>
     <!-- End container -->
@@ -138,10 +138,10 @@
     <!-- End col-md-7 -->
     <div class="col-md-7 float-right align-left">
         <div class="special-content">
-            <img class="icon-big" src="public/themes/nongsan/images/icon-shipping-5.png" alt="Big sale today"><h3>BIG SALE TODAY</h3>
-            <h5>Get 30% off your order of $100 or more...</h5>
-            <div class="time" data-countdown="countdown" data-date="04-20-2017-10-20-30"></div>
-            <a class="link-v1 bg-brand font-300" href="#" title="shopnow">Shop Now</a>
+            <img class="icon-big" src="public/themes/nongsan/images/icon-shipping-5.png" alt="Big sale today"><h3>Sale ngay hôm nay</h3>
+            <h5>Sale 30% cho hóa đơn từ 1.500.000</h5>
+            <div class="time" data-countdown="countdown" data-date="12-20-2021-10-20-30"></div>
+            <a class="link-v1 bg-brand font-300" href="/products" title="shopnow">Mua ngay</a>
         </div>
     </div>
     <!-- End col-md-5 -->
@@ -150,8 +150,8 @@
 <div class="choose-us">
     <div class="container container-ver2">
         <div class="title-choose align-center">
-            <h3>Why Choose Us</h3>
-            <p>The fact of the matter is that you really know something's organic when you find bugs! they obviously wouldn't have made it that far in a non-organic growing environment, so better than any certification or seal on a package, the presence of creatures let you know the plant was healthy and.</p>
+            <h3>Đến với chúng tôi</h3>
+            <p>Những sản phẩm được cung cấp là những thực phẩm đã qua kiểm duyệt an toàn vệ sinh thực phẩm, bảo đảm thân thiện môi trường và mang lại giá trị dinh dưỡng cao cho người tiêu dùng. Hiện tại, chúng tôi đang là đại lý phân phối chính thức của các hãng thực phẩm nổi tiếng tại Việt Nam: CP, Vissan, Ba Huân, Vifon, Vina Acecook, Green Choice, Vinh Phú Food…</p>
             <div class="align-center border-choose">
                 <div class="images">
                     <img src="public/themes/nongsan/images/bg-border-center.png" alt="icon">
@@ -164,206 +164,51 @@
         <div class="col-md-3 align-left">
             <div class="text">
                 <img class="icon-choose" src="public/themes/nongsan/images/icon-choose-1.png" alt="icon-choose">
-                <h3>100% Organic</h3>
-                <p>Suspendisse ultricies nisi vel quam suscipit, et rutrum odio porttitor. </p>
+                <h3>100% Hữu cơ</h3>
+                <p>Được trồng, xử lý và chế biến theo cách an toàn cho môi trường</p>
             </div>
             <!--End text-->
             <div class="text">
                 <img class="icon-choose" src="public/themes/nongsan/images/icon-choose-2.png" alt="icon-choose">
-                <h3>Family healthy</h3>
-                <p>Suspendisse ultricies nisi vel quam suscipit, et rutrum odio porttitor. </p>
+                <h3>Sức khỏe gia đình</h3>
+                <p>Chú trọng thực phẩm tốt cho sức khỏe của các thành viên trong gia đình </p>
             </div>
             <!--End text-->
             <div class="text">
                 <img class="icon-choose" src="public/themes/nongsan/images/icon-choose-3.png" alt="icon-choose">
-                <h3>Always Fresh</h3>
-                <p>Suspendisse ultricies nisi vel quam suscipit, et rutrum odio porttitor. </p>
+                <h3>Luôn tươi</h3>
+                <p>Sản phẩm đảm bảo độ tươi ngon khi đến tay khách hàng</p>
             </div>
             <!--End text-->
         </div>
         <!--End col-md-3-->
         <div class="col-md-6">
-            <img class="img-responsive" src="public/themes/nongsan/images/images-choose.jpg" alt="banner">
+            <img class="img-responsive" src="{{ RvMedia::getImageUrl(theme_option('opt-banner-why-choose')) }}" alt="banner">
         </div>
         <!--End col-md-6-->
         <div class="col-md-3 align-right right-items">
             <div class="text">
                 <img class="icon-choose" src="public/themes/nongsan/images/icon-choose-4.png" alt="icon-choose">
-                <h3>100% Organic</h3>
-                <p>Suspendisse ultricies nisi vel quam suscipit, et rutrum odio porttitor. </p>
+                <h3>Chứng nhận</h3>
+                <p>Sản phẩm được kiểm tra kĩ càng trước khi xuất khỏi kho</p>
             </div>
             <!--End text-->
             <div class="text">
                 <img class="icon-choose" src="public/themes/nongsan/images/icon-choose-5.png" alt="icon-choose">
-                <h3>Family healthy</h3>
-                <p>Suspendisse ultricies nisi vel quam suscipit, et rutrum odio porttitor. </p>
+                <h3>Đa dạng</h3>
+                <p>Đa dạng về thực phẩm, nông sản, thủy sản ... </p>
             </div>
             <!--End text-->
             <div class="text">
                 <img class="icon-choose" src="public/themes/nongsan/images/icon-choose-6.png" alt="icon-choose">
-                <h3>Always Fresh</h3>
-                <p>Suspendisse ultricies nisi vel quam suscipit, et rutrum odio porttitor. </p>
+                <h3>Giao hàng nhanh</h3>
+                <p>Giao hàng trong vòng 24h </p>
             </div>
             <!--End text-->
         </div>
         <!--End col-md-3-->
     </div>
     <!--End container-->
-</div>
-
-<div class="bg-slider-one-item space-50">
-
-
-
-
-
-
-
-    <div class="slider-dot-images">
-        <div class="container container-ver2 center">
-            <div class="slider-nav">
-                <div>
-                    <img src="public/themes/nongsan/images/about1.jpg" alt="images">
-                </div>
-                <div>
-                    <img src="public/themes/nongsan/images/about1.jpg" alt="images">
-
-
-
-
-
-
-                </div>
-                <div>
-                    <img src="public/themes/nongsan/images/about1.jpg" alt="images">
-                </div>
-                <div>
-                    <img src="public/themes/nongsan/images/about1.jpg" alt="images">
-
-
-
-
-
-
-                </div>
-                <div>
-                    <img src="public/themes/nongsan/images/about1.jpg" alt="images">
-                </div>
-                <div>
-                    <img src="public/themes/nongsan/images/about1.jpg" alt="images">
-
-
-
-
-
-
-
-                </div>
-                <div>
-                    <img src="public/themes/nongsan/images/about1.jpg" alt="images">
-                </div>
-                <div>
-                    <img src="public/themes/nongsan/images/about1.jpg" alt="images">
-                </div>
-                <div>
-                    <img src="public/themes/nongsan/images/about1.jpg" alt="images">
-                </div>
-                <div>
-                    <img src="public/themes/nongsan/images/about1.jpg" alt="images">
-                </div>
-            </div>
-
-
-
-            <div class="slider-for">
-                <div>
-                    <p>I rarely write reviews for products but with the EngoCreative, I am more than grateful. The site is fully customizable and you can really feel like playing while designing the site! Thanks again for having made such a convenient, yet fully-functional theme.</p>
-                    <h3>JONATHAN VANCE</h3>
-                    <a href="#" title="CEO">CEO &amp; Founder</a>
-                </div>
-                <div>
-                    <p>I rarely write reviews for products but with the EngoCreative, I am more than grateful. The site is fully customizable and you can really feel like playing while designing the site! Thanks again for having made such a convenient, yet fully-functional theme.</p>
-                    <h3>JONATHAN VANCE</h3>
-                    <a href="#" title="CEO">CEO &amp; Founder</a>
-                </div>
-                <div>
-                    <p>I rarely write reviews for products but with the EngoCreative, I am more than grateful. The site is fully customizable and you can really feel like playing while designing the site! Thanks again for having made such a convenient, yet fully-functional theme.</p>
-
-                    <h3>JONATHAN VANCE</h3>
-                    <a href="#" title="CEO">CEO &amp; Founder</a>
-                </div>
-                <div>
-                    <p>I rarely write reviews for products but with the EngoCreative, I am more than grateful. The site is fully customizable and you can really feel like playing while designing the site! Thanks again for having made such a convenient, yet fully-functional theme.</p>
-                    <h3>JONATHAN VANCE</h3>
-                    <a href="#" title="CEO">CEO &amp; Founder</a>
-                </div>
-                <div>
-                    <p>I rarely write reviews for products but with the EngoCreative, I am more than grateful. The site is fully customizable and you can really feel like playing while designing the site! Thanks again for having made such a convenient, yet fully-functional theme.</p>
-                    <h3>JONATHAN VANCE</h3>
-                    <a href="#" title="CEO">CEO &amp; Founder</a>
-
-                </div>
-                <div>
-                    <p>I rarely write reviews for products but with the EngoCreative, I am more than grateful. The site is fully customizable and you can really feel like playing while designing the site! Thanks again for having made such a convenient, yet fully-functional theme.</p>
-                    <h3>JONATHAN VANCE</h3>
-                    <a href="#" title="CEO">CEO &amp; Founder</a>
-                </div>
-                <div>
-                    <p>I rarely write reviews for products but with the EngoCreative, I am more than grateful. The site is fully customizable and you can really feel like playing while designing the site! Thanks again for having made such a convenient, yet fully-functional theme.</p>
-                    <h3>JONATHAN VANCE</h3>
-                    <a href="#" title="CEO">CEO &amp; Founder</a>
-                </div>
-                <div>
-                    <p>I rarely write reviews for products but with the EngoCreative, I am more than grateful. The site is fully customizable and you can really feel like playing while designing the site! Thanks again for having made such a convenient, yet fully-functional theme.</p>
-                    <h3>JONATHAN VANCE</h3>
-                    <a href="#" title="CEO">CEO &amp; Founder</a>
-                </div>
-                <div>
-                    <p>I rarely write reviews for products but with the EngoCreative, I am more than grateful. The site is fully customizable and you can really feel like playing while designing the site! Thanks again for having made such a convenient, yet fully-functional theme.</p>
-                    <h3>JONATHAN VANCE</h3>
-                    <a href="#" title="CEO">CEO &amp; Founder</a>
-                </div>
-                <div>
-                    <p>I rarely write reviews for products but with the EngoCreative, I am more than grateful. The site is fully customizable and you can really feel like playing while designing the site! Thanks again for having made such a convenient, yet fully-functional theme.</p>
-                    <h3>JONATHAN VANCE</h3>
-                    <a href="#" title="CEO">CEO &amp; Founder</a>
-                </div>
-            </div>
-
-            <!-- End slider-for -->
-        </div>
-
-        <!-- End container -->
-        <div class="container container-ver2">
-            <div class="brand-content owl-carousel">
-                <div class="items">
-                    <a href="#" title="brand"><img class="img-responsive" src="public/themes/nongsan/images/brand-1.png" alt="Brand"></a>
-
-                </div>
-                <div class="items">
-                    <a href="#" title="brand"><img class="img-responsive" src="public/themes/nongsan/images/brand-1.png" alt="Brand"></a>
-
-                </div>
-                <div class="items">
-                    <a href="#" title="brand"><img class="img-responsive" src="public/themes/nongsan/images/brand-1.png" alt="Brand"></a>
-
-                </div>
-                <div class="items">
-                    <a href="#" title="brand"><img class="img-responsive" src="public/themes/nongsan/images/brand-1.png" alt="Brand"></a>
-
-                </div>
-                <div class="items">
-                    <a href="#" title="brand"><img class="img-responsive" src="public/themes/nongsan/images/brand-1.png" alt="Brand"></a>
-
-                </div>
-                <div class="items">
-                    <a href="#" title="brand"><img class="img-responsive" src="public/themes/nongsan/images/brand-1.png" alt="Brand"></a>
-                </div>
-            </div>
-        </div>
-        <!--End container-->
-    </div>
-
 </div>
 
 {!! Theme::partial('feature-product') !!}
@@ -373,49 +218,4 @@
     <div class="border-title"></div>
 </div>
 <!--End container-->
-<div class="container container-ver2 blog-home1">
-    <div class="title-text-v2">
-        <div class="icon-title align-center space-20">
-            <img src="public/themes/nongsan/images/title-lastest-from.png" alt="icon-title">
-        </div>
-        <h3>Lastest From Blog</h3>
-        <a class="link padding-bt-20" href="#" title="See all">See all</a>
-    </div>
-    <!-- End title -->
-    <div class="blog-content owl-carousel slider-three-item">
-        <div class="item">
-            <a class="hover-images" href="#" title="images">
-                <img class="img-responsive" src="public/themes/nongsan/images/ImgBlog/1.jpg" alt="blog">
-            </a>
-            <div class="text">
-                <p class="date">DEC 17,2016</p>
-                <a href="#" title="title"><h3>Learn On Organic Farms</h3></a>
-                <p class="by">Post by <span>FreshFood</span> - 16 Comments</p>
-            </div>
-        </div>
-        <!-- End item -->
-        <div class="item">
-            <a class="hover-images" href="#" title="images">
-                <img class="img-responsive" src="public/themes/nongsan/images/ImgBlog/1.jpg" alt="blog">
-            </a>
-            <div class="text">
-                <p class="date">DEC 17,2016</p>
-                <a href="#" title="title"><h3>What is organic farming?</h3></a>
-                <p class="by">Post by <span>FreshFood</span> - 16 Comments</p>
-            </div>
-        </div>
-        <!-- End item -->
-        <div class="item">
-            <a class="hover-images" href="#" title="images">
-                <img class="img-responsive" src="public/themes/nongsan/images/ImgBlog/1.jpg" alt="blog">
-            </a>
-            <div class="text">
-                <p class="date">DEC 17,2016</p>
-                <a href="#" title="title"><h3>Advantages of Organic Meat</h3></a>
-                <p class="by">Post by <span>FreshFood</span> - 16 Comments</p>
-            </div>
-        </div>
-        <!-- End item -->
-    </div>
-    <!-- End blog-content owl-carousel -->
-</div>
+{!! Theme::partial('lastest-post') !!}

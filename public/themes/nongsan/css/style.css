@@ -2997,7 +2997,7 @@ ul.tabs.tabs-title li span.count {
   float: left;
   padding: 0 10px;
   position: relative;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8 !important;
   padding-top: 30px;
   padding-bottom: 10px;
 }
@@ -3082,7 +3082,9 @@ ul.tabs.tabs-title li span.count {
 .featured-products.new-arrivals .products .product .product-price-old {
   padding-left: 20px;
 }
-
+.featured-products.new-arrivals .products .product .product-price-none {
+    padding-left: 20px;
+}
 @media (max-width: 480px) {
   .featured-products.new-arrivals .products .product {
     width: 100%;
@@ -10627,7 +10629,7 @@ nav.pagination .next:hover i, nav.pagination .prev:hover i {
 .products .product p.product-title {
   font: 400 20px/34px "Roboto Slab";
     font-weight: 600;
-  color: red;
+  color: #11ba13;
 }
 
 .products .product .description {
@@ -20741,4 +20743,14 @@ nav.megamenu-v2 ul.main-menu li:last-child {
 .icon-accept{
     color: green;
     padding-right: 5px;
+}
+.post--single .post__header{
+    padding: 20px 0;
+}
+.post--single .post__header .post__title{
+    font-size: 28px;
+    padding: 10px 0;
+}
+.footer-menu a{
+    font-size: 15px;
 }

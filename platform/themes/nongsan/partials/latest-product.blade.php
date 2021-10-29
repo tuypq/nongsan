@@ -13,7 +13,7 @@
         <div class="tab-container space-10">
             <div id="tab_1" class="tab-content">
                 <div class="products hover-shadow ver2 border-space-product border-space-product">
-                    @foreach(get_featured_products() as $item)
+                    @foreach(get_featured_products(['take'=>10]) as $item)
 {{--                        @dd($item)--}}
                     <div class="product">
                         <div class="product-images">
@@ -28,9 +28,15 @@
                             <!-- End action -->
                         </div>
                         <a href="{{$item->url}}" title="Union Bed"><p class="product-title">{{$item->name}}</p></a>
-                        <p class="product-price-old">{{format_price($item->price)}}</p>
-                        <p class="product-price">{{format_price($item->sale_price)}}</p>
-
+                        @if($item->price != 0)
+                            <p class="product-price-old">{{format_price($item->price)}}</p>
+                        @endif
+                        @if($item->sale_price != 0)
+                            <p class="product-price">{{format_price($item->sale_price)}}</p>
+                        @endif
+                        @if($item->price == 0 && $item->sale_price == 0)
+                            <p class="product-price product-price-none">Liên hệ</p>
+                        @endif
                     </div>
                     @endforeach
                     <!-- End item -->
@@ -43,7 +49,7 @@
                     @foreach(get_products_by_categories([ 'categories' => [
                 'by'       => 'id',
                 'value_in' => [36],
-            ],'is_featured'=>1]) as $item)
+            ],'is_featured'=>1,'take'=>10]) as $item)
                         <div class="product">
                             <div class="product-images">
                                 <a href="{{$item->url}}" title="product-images">
@@ -57,9 +63,15 @@
                                 <!-- End action -->
                             </div>
                             <a href="{{$item->url}}" title="Union Bed"><p class="product-title">{{$item->name}}</p></a>
-                            <p class="product-price-old">{{format_price($item->price)}}</p>
-                            <p class="product-price">{{format_price($item->sale_price)}}</p>
-
+                            @if($item->price != 0)
+                                <p class="product-price-old">{{format_price($item->price)}}</p>
+                            @endif
+                            @if($item->sale_price != 0)
+                                <p class="product-price">{{format_price($item->sale_price)}}</p>
+                            @endif
+                            @if($item->price == 0 && $item->sale_price == 0)
+                                <p class="product-price product-price-none">Liên hệ</p>
+                            @endif
                         </div>
                     @endforeach
                     <!-- End item -->
@@ -73,7 +85,7 @@
                     @foreach(get_products_by_categories([ 'categories' => [
                 'by'       => 'id',
                 'value_in' => [37],
-            ],'is_featured'=>1]) as $item)
+            ],'is_featured'=>1,'take'=>10]) as $item)
                         <div class="product">
                             <div class="product-images">
                                 <a href="{{$item->url}}" title="product-images">
@@ -87,9 +99,15 @@
                                 <!-- End action -->
                             </div>
                             <a href="{{$item->url}}" title="Union Bed"><p class="product-title">{{$item->name}}</p></a>
-                            <p class="product-price-old">{{format_price($item->price)}}</p>
-                            <p class="product-price">{{format_price($item->sale_price)}}</p>
-
+                            @if($item->price != 0)
+                                <p class="product-price-old">{{format_price($item->price)}}</p>
+                            @endif
+                            @if($item->sale_price != 0)
+                                <p class="product-price">{{format_price($item->sale_price)}}</p>
+                            @endif
+                            @if($item->price == 0 && $item->sale_price == 0)
+                                <p class="product-price product-price-none">Liên hệ</p>
+                            @endif
                         </div>
                 @endforeach
                 <!-- End item -->
@@ -103,7 +121,7 @@
                     @foreach(get_products_by_categories([ 'categories' => [
                 'by'       => 'id',
                 'value_in' => [38],
-            ],'is_featured'=>1]) as $item)
+            ],'is_featured'=>1,'take'=>10]) as $item)
                         <div class="product">
                             <div class="product-images">
                                 <a href="{{$item->url}}" title="product-images">
@@ -117,8 +135,15 @@
                                 <!-- End action -->
                             </div>
                             <a href="{{$item->url}}" title="Union Bed"><p class="product-title">{{$item->name}}</p></a>
-                            <p class="product-price-old">{{format_price($item->price)}}</p>
-                            <p class="product-price">{{format_price($item->sale_price)}}</p>
+                            @if($item->price != 0)
+                                <p class="product-price-old">{{format_price($item->price)}}</p>
+                            @endif
+                            @if($item->sale_price != 0)
+                                <p class="product-price">{{format_price($item->sale_price)}}</p>
+                            @endif
+                            @if($item->price == 0 && $item->sale_price == 0)
+                                <p class="product-price product-price-none">Liên hệ</p>
+                            @endif
 
                         </div>
                 @endforeach
@@ -133,7 +158,7 @@
                     @foreach(get_products_by_categories([ 'categories' => [
                 'by'       => 'id',
                 'value_in' => [39],
-            ],'is_featured'=>1]) as $item)
+            ],'is_featured'=>1,'take'=>10]) as $item)
                         <div class="product">
                             <div class="product-images">
                                 <a href="{{$item->url}}" title="product-images">
@@ -147,9 +172,15 @@
                                 <!-- End action -->
                             </div>
                             <a href="{{$item->url}}" title="Union Bed"><p class="product-title">{{$item->name}}</p></a>
-                            <p class="product-price-old">{{format_price($item->price)}}</p>
-                            <p class="product-price">{{format_price($item->sale_price)}}</p>
-
+                            @if($item->price != 0)
+                                <p class="product-price-old">{{format_price($item->price)}}</p>
+                            @endif
+                            @if($item->sale_price != 0)
+                                <p class="product-price">{{format_price($item->sale_price)}}</p>
+                            @endif
+                            @if($item->price == 0 && $item->sale_price == 0)
+                                <p class="product-price product-price-none">Liên hệ</p>
+                            @endif
                         </div>
                 @endforeach
                 <!-- End item -->
@@ -161,6 +192,6 @@
         </div>
     </div>
     <div class="box center space-padding-tb-30 space-30">
-        <a class="link-v1 color-brand font-300" href="/products" title="View All">View All</a>
+        <a class="link-v1 color-brand font-300" href="/products" title="View All">Xem thêm</a>
     </div>
 </div>

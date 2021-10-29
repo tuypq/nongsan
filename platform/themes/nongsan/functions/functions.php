@@ -116,6 +116,20 @@ theme_option()
         ],
     ])
     ->setField([
+        'id'         => 'phone',
+        'section_id' => 'opt-text-subsection-general',
+        'type'       => 'url',
+        'label'      => __('Điện thoại'),
+        'attributes' => [
+            'name'    => 'phone',
+            'value'   => null,
+            'options' => [
+                'class'        => 'form-control',
+                'data-counter' => 255,
+            ],
+        ],
+    ])
+    ->setField([
         'id'         => 'contact_email',
         'section_id' => 'opt-text-subsection-general',
         'type'       => 'email',

@@ -1,5 +1,6 @@
 @php Theme::set('section-name', $post->name) @endphp
-
+<section>
+<div class="container container-ver2">
 <article class="post post--single">
     <header class="post__header">
         <h3 class="post__title">{{ $post->name }}</h3>
@@ -55,3 +56,5 @@
         {!! apply_filters(BASE_FILTER_PUBLIC_COMMENT_AREA, Theme::partial('comments')) !!}
     @endif
 </article>
+</div>
+</section>

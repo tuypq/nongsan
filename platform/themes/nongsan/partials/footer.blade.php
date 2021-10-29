@@ -6,35 +6,39 @@
         <div class="footer-inner">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
-                    <h3 class="title-footer">About Us</h3>
-                    <p>With more than 15 years of experience we can proudly say that we are one of the best in business, a trusted supplier for more than 1000 companies...</p>
+                    <h3 class="title-footer">GIỚI THIỆU</h3>
+                    <p>{{theme_option('site_description')}}</p>
                     <a class="link-footer" href="#" title="footer">Read more <i class="fa fa-long-arrow-right"></i></a>
                 </div>
                 <div class="col-md-2 col-sm-6">
-                    <h3 class="title-footer">Infomation</h3>
-                    <ul class="list-footer">
-                        <li><a href="#" title="title">Delivery</a></li>
-                        <li><a href="#" title="title">Legal Notice</a></li>
-                        <li><a href="#" title="title">Terms & Conditions</a></li>
-                        <li><a href="#" title="title">About Us</a></li>
-                        <li><a href="#" title="title">Secure Payment</a></li>
-                        <li><a href="#" title="title">Our Stores</a></li>
-                    </ul>
+                    <h3 class="title-footer">THÔNG TIN</h3>
+                    <div class="footer-menu col-md-12">
+                        {!!
+                            Menu::generateMenu([
+                                'slug'    => 'thong-tin',
+                            ])
+                        !!}
+                    </div>
+
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <h3 class="title-footer">Get It Touch</h3>
+                    <h3 class="title-footer">LIÊN HỆ</h3>
+                    <ul class="list-footer">
+                        <li><a href="#" title="title"><b>Địa chỉ</b>: {{theme_option('address')}}</a></li>
+                        <li><a href="#" title="title"><b>Điện Thoại</b>: {{theme_option('phone')}}</a></li>
+                        <li><a href="#" title="title"><b>Email</b>: {{theme_option('email')}}</a></li>
+
+                    </ul>
                     <div class="social space-30">
                         <a href="#" title="t"><i class="fa fa-twitter"></i></a>
                         <a href="#" title="f"><i class="fa fa-facebook"></i></a>
                         <a href="#" title="y"><i class="fa fa-youtube-play"></i></a>
                         <a href="#" title="g"><i class="fa fa-google"></i></a>
                     </div>
-                    <h3 class="title-footer">Payment Accept</h3>
-                    <a href="#" title="paypal"><img src="assets/images/paypal-footer.png" alt="images"></a>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <h3 class="title-footer">Get Newsletter</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+                    <h3 class="title-footer">GỬI THÔNG TIN</h3>
+                    <p>Nhập email để nhận thông tin mới nhất từ chúng tôi</p>
                     <div class="subscribe">
                         <form action="#" method="get" accept-charset="utf-8">
                             <input type="text" onblur="if (this.value == '') {this.value = 'Enter Your Email Address';}" onfocus="if(this.value != '') {this.value = '';}" value="Enter Your Email Address" class="input-text required-entry validate-email" title="Sign up for our newsletter" id="newsletter" name="email">
@@ -52,7 +56,7 @@
     <div class="footer-bottom box">
         <div class="container container-ver2">
             <div class="box bottom">
-                <p class="float-left">Copyright &copy;2016 Fresh Food - All Rights Reserved.</p>
+                <p class="float-left">{{theme_option('copyright')}}</p>
                 <div class="float-right">
                     <ul class="menu-bottom-footer">
                         <li><a href="#" title="Contact Us">Contact Us</a></li>
