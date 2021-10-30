@@ -1,36 +1,40 @@
-@php Theme::set('section-name', __('Search result for: ') . ' "' . Request::input('q') . '"') @endphp
-
-@if ($posts->count() > 0)
-    @foreach ($posts as $post)
-        <article class="post post__horizontal mb-40 clearfix">
-            <div class="post__thumbnail">
-                <img src="{{ RvMedia::getImageUrl($post->image, 'medium', false, RvMedia::getDefaultImage()) }}" alt="{{ $post->name }}"><a href="{{ $post->url }}" class="post__overlay"></a>
-            </div>
-            <div class="post__content-wrap">
-                <header class="post__header">
-                    <h3 class="post__title"><a href="{{ $post->url }}">{{ $post->name }}</a></h3>
-                    <div class="post__meta"><span class="post__created-at"><i class="ion-clock"></i>{{ $post->created_at->format('M d, Y') }}</span>
-                        @if ($post->author->username)
-                            <span class="post__author"><i class="ion-android-person"></i><span>{{ $post->author->getFullName() }}</span></span>
-                        @endif
-                        <span class="post-category"><i class="ion-cube"></i>
-                            @if ($post->categories->first())
-                                <a href="{{ $post->categories->first()->url }}">{{ $post->categories->first()->name }}</a>
-                            @endif
-                        </span>
+{{--@php Theme::set('section-name', $category->name) @endphp--}}
+<div class="container">
+    <div class="banner-header banner-lbook3 space-30">
+        <img src="{{ RvMedia::getImageUrl(theme_option('opt-banner-header')) }}" alt="Banner-header">
+        <div class="text">
+            <h3>Bài viết</h3>
+            <p><a href="/" title="Home">Home</a><i class="fa fa-caret-right"></i></p>
+        </div>
+    </div>
+</div>
+<div class="blog-post-container blog-page blog-post-columns-3 center">
+    <div class="container container-ver2">
+        <div class="row">
+            @if ($posts->count() > 0)
+                @foreach ($posts as $post)
+                    <div class="blog-post-item">
+                        <div class="blog-post-image hover-images">
+                            <a href="{{ $post->url }}" title="Post"><img src="{{ RvMedia::getImageUrl($post->image, 'medium', false, RvMedia::getDefaultImage()) }}" alt=""></a>
+                        </div>
+                        <div class="text">
+                            <h3><a href="{{ $post->url }}" title="Integer scelerisque diam vitae aliquam fringilla.">{{ $post->name }}</a></h3>
+                            <p class="post-by"><span><i class="fa fa-pencil-square-o"></i> {{ $post->author->getFullName() }}</span><span><i class="fa fa-comment-o"></i> 36 Comments</span></p>
+                            <p class="content">{{ $post->description }}</p>
+                            <a class="link-v1 color-brand" href="{{ $post->url }}" title="readmore">Xem thêm</a>
+                        </div>
+                        <!-- End text -->
                     </div>
-                </header>
-                <div class="post__content">
-                    <p data-number-line="4">{{ $post->description }}</p>
+
+                @endforeach
+                <div class="page-pagination text-right">
+                    {!! $posts->links() !!}
                 </div>
-            </div>
-        </article>
-    @endforeach
-    <div class="page-pagination text-right">
-        {!! $posts->withQueryString()->links() !!}
+            @else
+                <div class="alert alert-warning">
+                    <p>{{ __('There is no data to display!') }}</p>
+                </div>
+            @endif
+        </div>
     </div>
-@else
-    <div class="alert alert-warning">
-        <p>{{ __('There is no data to display!') }}</p>
-    </div>
-@endif
+</div>
