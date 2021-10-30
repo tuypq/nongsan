@@ -21,7 +21,7 @@
                             <h3><a href="{{ $post->url }}" title="Integer scelerisque diam vitae aliquam fringilla.">{{ $post->name }}</a></h3>
                             <p class="post-by"><span><i class="fa fa-pencil-square-o"></i> {{ $post->author->getFullName() }}</span><span><i class="fa fa-comment-o"></i> 36 Comments</span></p>
                             <p class="content">{{ $post->description }}</p>
-                            <a class="link-v1 color-brand" href="#" title="readmore">Xem thêm</a>
+                            <a class="link-v1 color-brand" href="{{ $post->url }}" title="readmore">Xem thêm</a>
                         </div>
                         <!-- End text -->
                     </div>
