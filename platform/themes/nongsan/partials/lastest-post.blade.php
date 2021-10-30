@@ -4,7 +4,7 @@
             <img src="public/themes/nongsan/images/title-lastest-from.png" alt="icon-title">
         </div>
         <h3>Bài viết mới nhất</h3>
-        <a class="link padding-bt-20" href="#" title="See all">See all</a>
+        <a class="link padding-bt-20" href="#" title="See all">Xem thêm</a>
     </div>
     <!-- End title -->
     <div class="blog-content owl-carousel slider-three-item">

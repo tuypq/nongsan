@@ -7175,6 +7175,11 @@ ul.tabs.tabs-title li span.count {
   margin-top: 10px;
   font-size: 14px;
   margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
 }
 
 .blog-post-container .blog-post-item .text {
