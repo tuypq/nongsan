@@ -14673,7 +14673,7 @@ nav.pagination a.next:hover i, nav.pagination a.prev:hover i {
     max-height: 80px;
 }
 #header.header-v1 .logo img{
-    width: 250px;
+    width: auto;
     height: 80px;
 }
 #header.header-v1 .box-right .cart, #header.header-v1 .box-right .search {
