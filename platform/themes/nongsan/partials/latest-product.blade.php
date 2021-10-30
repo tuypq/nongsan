@@ -13,7 +13,7 @@
         <div class="tab-container  space-10">
             <div id="tab_1" class="tab-content active">
                 <div class="products hover-shadow ver2 border-space-product border-space-product">
-                    @foreach(get_featured_products(['take'=>10]) as $item)
+                    @foreach(get_featured_products(['take'=>8]) as $item)
 {{--                        @dd($item)--}}
                     <div class="product">
                         <div class="product-images ">
@@ -46,7 +46,7 @@
                     @foreach(get_products_by_categories([ 'categories' => [
                 'by'       => 'id',
                 'value_in' => [36],
-            ],'is_featured'=>1,'take'=>10]) as $item)
+            ],'is_featured'=>1,'take'=>8]) as $item)
                         <div class="product">
                             <div class="product-images">
                                 <a href="{{$item->url}}" title="product-images">
@@ -77,7 +77,7 @@
                     @foreach(get_products_by_categories([ 'categories' => [
                 'by'       => 'id',
                 'value_in' => [37],
-            ],'is_featured'=>1,'take'=>10]) as $item)
+            ],'is_featured'=>1,'take'=>8]) as $item)
                         <div class="product">
                             <div class="product-images">
                                 <a href="{{$item->url}}" title="product-images">
@@ -113,7 +113,7 @@
                     @foreach(get_products_by_categories([ 'categories' => [
                 'by'       => 'id',
                 'value_in' => [38],
-            ],'is_featured'=>1,'take'=>10]) as $item)
+            ],'is_featured'=>1,'take'=>8]) as $item)
                         <div class="product">
                             <div class="product-images">
                                 <a href="{{$item->url}}" title="product-images">
@@ -150,7 +150,7 @@
                     @foreach(get_products_by_categories([ 'categories' => [
                 'by'       => 'id',
                 'value_in' => [39],
-            ],'is_featured'=>1,'take'=>10]) as $item)
+            ],'is_featured'=>1,'take'=>8]) as $item)
                         <div class="product">
                             <div class="product-images">
                                 <a href="{{$item->url}}" title="product-images">
