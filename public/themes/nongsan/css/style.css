@@ -10550,7 +10550,7 @@ nav.pagination .next:hover i, nav.pagination .prev:hover i {
 }
 
 .products.ver2 .product p.product-title, .products.ver2 .product .product-price-old, .products.ver2 .product .product-price {
-  margin-top: -80px;
+  /*margin-top: -80px;*/
   position: relative;
   z-index: 2;
 }
