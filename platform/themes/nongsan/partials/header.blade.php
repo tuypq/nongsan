@@ -130,7 +130,7 @@
                 <div class="container container-ver2">
                     <div class="box">
                         <p class="icon-menu-mobile"><i class="fa fa-bars" ></i></p>
-                        <div class="logo-mobile"><a href="#" title="Xanadu"><img src="public/themes/nongsan/images/logo-v1.png" alt="Xanadu-Logo"></a></div>
+                        <div class="logo-mobile"><a href="#" title="Xanadu"><img src="{{ RvMedia::getImageUrl(theme_option('logo')) }}" alt="Xanadu-Logo"></a></div>
                             <nav class="mega-menu">
                                 {!!
                                Menu::renderMenuLocation('main-menu', [
