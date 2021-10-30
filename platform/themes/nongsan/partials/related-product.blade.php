@@ -17,8 +17,15 @@
                 <!-- End action -->
             </div>
             <a href="{{$item->url}}" title="Union Bed"><p class="product-title">{{$item->name}}</p></a>
-            <p class="product-price-old">{{format_price($item->price)}}</p>
-            <p class="product-price">{{format_price($item->sale_price)}}</p>
+            @if($item->price != 0)
+                <p class="product-price-old">{{format_price($item->price)}}</p>
+            @endif
+            @if($item->sale_price != 0)
+                <p class="product-price">{{format_price($item->sale_price)}}</p>
+            @endif
+            @if($item->price == 0 && $item->sale_price == 0)
+                <p class="product-price product-price-none">Liên hệ</p>
+            @endif
 
         </div>
         <!-- End product -->
