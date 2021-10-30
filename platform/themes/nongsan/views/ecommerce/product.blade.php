@@ -84,14 +84,6 @@
                     <div class="options">
                         {!! $product->description !!}
                         <!-- End action -->
-                        <div class="description-lits">
-                            <h3>100% Organic Food from Farm Tomoko</h3>
-                            <ul>
-                                <li><i class="fa fa-check-square icon-accept"></i> 100% Organic Food from Farm Hong Quat Packging</li>
-                                <li><i class="fa fa-check-square icon-accept"></i> 100% Organic Food</li>
-                                <li><i class="fa fa-check-square icon-accept"></i> 100% Fresh Not Chemicals</li>
-                            </ul>
-                        </div>
                         <!--End Description-->
 {{--                        <div class="box space-30">--}}
 {{--                            <div class="row">--}}

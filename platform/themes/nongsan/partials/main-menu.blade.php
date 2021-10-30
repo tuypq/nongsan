@@ -3,7 +3,7 @@
         <li class="menu-item @if ($row->has_child) dropdown @endif {{ $row->css_class }} @if ($row->active) active @endif">
             <a href="{{ $row->url }}" target="{{ $row->target }}">
                 @if ($row->icon_font)<i class='{{ trim($row->icon_font) }}'></i> @endif{{ $row->title }}
-                @if ($row->has_child) <span class="toggle-icon"><i class="fa fa-angle-down"></i></span>@endif
+{{--                @if ($row->has_child) <span class="toggle-icon"><i class="fa fa-angle-down"></i></span>@endif--}}
             </a>
             @if ($row->has_child)
                 {!!
